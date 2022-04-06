@@ -8,8 +8,7 @@ end xbar_stage_5;
 
 architecture rtl of xbar_stage_5 is
   begin
-    xbar:
-      xbar_gen
-        generic map(n => 5)
-        port map(s => SW, y1 => LEDR[0]);
+    xbar: xbar_gen
+      generic map(n => 5)
+      port map(s => SW, y1 => LEDR[0]);
   end rtl;

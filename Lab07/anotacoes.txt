@@ -1,3 +1,5 @@
 O que se quer dizer com leitura assíncrona na prática?
 
 O jeito de zerar um vetor de tamanho genérico está adequado?
+
+Decodificador precisa de Enable?

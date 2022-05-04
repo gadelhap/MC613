@@ -15,13 +15,14 @@ entity reg is
 end reg;
 
 architecture rtl of reg is
-
 begin
-process
-begin
-	wait until clk'event and clk = '1';
-	if clear = '1' then data_out <= (others => '0'); -- como zerar um vetor de n-bits;
-	elsif load = '1' then data_out <= data_in;
-	end if;
-end process;
+  process
+  begin
+    wait until clk'event and clk = '1';
+    if clear = '1' then
+      data_out <= (others => '0'); -- como zerar um vetor de n-bits;
+    elsif load = '1' then
+      data_out <= data_in;
+    end if;
+  end process;
 end rtl;

@@ -2,10 +2,11 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity dec3_to_8 is
-  port (
-    enable : in std_logic;
-    data_in : in std_logic_vector(2 downto 0);
-    data_out : out std_logic_vector(0 to 7) );
+	port (
+    	enable : in std_logic;
+    	data_in : in std_logic_vector(2 downto 0);
+    	data_out : out std_logic_vector(0 to 7)
+	);
 end dec3_to_8;
 
 architecture rtl of dec3_to_8 is

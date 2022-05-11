@@ -15,26 +15,24 @@ end shift_register;
 architecture rtl of shift_register is
 begin
   process
+    signal aux
   begin
     wait until clk'event and clk = '1';
   
-    if (mode = '00' OR ser_in = '0') AND NOT mode = '11' then  -- AND NOT está certo??;
-      par_out <= par_in;
-  
-    elsif mode = '01' then
+    if mode = '01' AND ser_in = '1' then
       for i in 1 to N-1 loop
         par_out(i) <= par_in(i-1);
       end loop;
       par_out(0) <= par_in(N-1);
         
-    elsif mode = '10' then
+    elsif mode = '10' AND ser_in = '1' then
       for i in 0 to N-2 loop
         par_out(i) <= par_in(i+1);
       end loop;
       par_out(N-1) <= par_in(0);
       
     elsif mode = '11' then
-      par_out <=;  -- não sei o que fazer aqui (parelela sincrona);
+      par_out <= par_in;
       
     end if;
   end process;

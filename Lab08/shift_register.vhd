@@ -15,25 +15,25 @@ end shift_register;
 architecture rtl of shift_register is
 begin
   process
-    signal aux
+  	  variable par_out_aux: std_logic_vector((N - 1) downto 0);
   begin
-    wait until clk'event and clk = '1';
-  
-    if mode = '01' then
-      for i in 1 to N-1 loop
-        par_out(i) <= par_in(i-1);
+	wait until clk'event and clk = '1';
+
+    if mode = "01" then
+      for i in N-1 downto 1 loop
+        par_out_aux(i) := par_out_aux(i-1);
       end loop;
-      par_out(0) <= ser_in;
+      par_out_aux(0) := ser_in;
         
-    elsif mode = '10' then
+    elsif mode = "10" then
       for i in 0 to N-2 loop
-        par_out(i) <= par_in(i+1);
+        par_out_aux(i) := par_out_aux(i+1);
       end loop;
-      par_out(N-1) <= ser_in;
+      par_out_aux(N-1) := ser_in;
       
-    elsif mode = '11' then
-      par_out <= par_in;
-      
+    elsif mode = "11" then
+      par_out_aux := par_in;
     end if;
+	 par_out <= par_out_aux;
   end process;
 end rtl;

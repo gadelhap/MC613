@@ -36,8 +36,8 @@ architecture rtl of ram is
 	end component;
 
 begin
-	WrEnBlock1 <= (not Address(7) and WrEn);
-	WrEnBlock2 <= (Address(7) and WrEn);
+	WrEnBlock1 <= (not Address(9) and not Address(8) and not Address(7) and WrEn);
+	WrEnBlock2 <= (not Address(9) and not Address(8) and Address(7) and WrEn);
 	memblock0 : ram_block port map (Clock, Address(6 downto 0), DataIn(31 downto 24), DataOut0, WrEnBlock1);
 	memblock1 : ram_block port map (Clock, Address(6 downto 0), DataIn(23 downto 16), DataOut1, WrEnBlock1);
 	memblock2 : ram_block port map (Clock, Address(6 downto 0), DataIn(15 downto 8), DataOut2, WrEnBlock1);

@@ -1,0 +1,102 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/ec2020-fra/ra186985/MC613_Lab12/lab12_m1ps_v2020.1_restored/simulation/qsim
+Ecpu
+Z1 w1655931817
+Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 YZlobdkPHzE;N99jHfcMc3
+Z3 DPx8 cyclonev 19 cyclonev_components 0 22 WF17oJHHbo`b[5Bl5P6_h0
+Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 dfin^_@l97Ngz6cK0kjS62
+Z5 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z6 DPx6 altera 11 dffeas_pack 0 22 ?bDUB9Db2N8iCCALNL;CT3
+Z7 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z10 DPx6 altera 28 altera_primitives_components 0 22 c]VUMXSEi8Z`KM1bem<:B3
+R0
+Z11 8mM_toplevel.vho
+Z12 FmM_toplevel.vho
+l0
+L38
+VOlBDXVo<]@@OUkIzdSbDX3
+!s100 22OaMLLCVAjG3HJ1WoFhE1
+Z13 OV;C;10.5b;63
+32
+Z14 !s110 1655931836
+!i10b 1
+Z15 !s108 1655931835.000000
+Z16 !s90 -work|work|mM_toplevel.vho|
+Z17 !s107 mM_toplevel.vho|
+!i113 1
+Z18 o-work work
+Z19 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+DEx4 work 3 cpu 0 22 OlBDXVo<]@@OUkIzdSbDX3
+l3690
+L66
+VbJebLhm12=Qc=DoK@4fNB1
+!s100 3F<iET[lgN3Xh:2eSDRd12
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R18
+R19
+Ecpu_vhd_vec_tst
+Z20 w1655931816
+R8
+R9
+R0
+Z21 8CPU_sim.vwf.vht
+Z22 FCPU_sim.vwf.vht
+l0
+L31
+Vc6a:X_Z[;7ckbMGcA6;Mk3
+!s100 Ad:;LA9HMBdjFGcZPldj<3
+R13
+32
+Z23 !s110 1655931837
+!i10b 1
+Z24 !s108 1655931837.000000
+Z25 !s90 -work|work|CPU_sim.vwf.vht|
+Z26 !s107 CPU_sim.vwf.vht|
+!i113 1
+R18
+R19
+Acpu_arch
+R8
+R9
+DEx4 work 15 cpu_vhd_vec_tst 0 22 c6a:X_Z[;7ckbMGcA6;Mk3
+l86
+L33
+VK@H^76b3_5CWhFbBc4nd73
+!s100 i`8IT^MMezGB]ak4SWNMS1
+R13
+32
+R23
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R18
+R19

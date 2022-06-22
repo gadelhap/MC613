@@ -1,0 +1,6 @@
+
+State Machine - |CPU|UC:UC|current_state
+Name current_state.EX current_state.DECODE current_state.FETCH 
+current_state.FETCH 0 0 0 
+current_state.DECODE 0 1 1 
+current_state.EX 1 0 1 

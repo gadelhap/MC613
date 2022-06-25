@@ -50,6 +50,8 @@ BEGIN
         WHEN FETCH =>
           CASE instruction IS
 				WHEN "011" =>
+						IR_ld		<= '0';
+						PC_Inc <= '0';
 				WHEN OTHERS =>
 						IR_ld		<= '1';
 						PC_Inc <= '1';

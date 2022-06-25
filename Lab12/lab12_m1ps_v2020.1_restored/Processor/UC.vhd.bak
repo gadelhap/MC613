@@ -48,12 +48,8 @@ BEGIN
 			DM_2_DBus	<= '0';
 			CASE current_state IS
         WHEN FETCH =>
-          CASE instruction IS
-				WHEN "011" =>
-				WHEN OTHERS =>
-						IR_ld		<= '1';
-						PC_Inc <= '1';
-			 END CASE;
+          IR_ld		<= '1';
+          PC_Inc		<= '1';
           
           current_state <= DECODE;
         WHEN DECODE =>
